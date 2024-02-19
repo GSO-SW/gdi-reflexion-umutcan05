@@ -17,15 +17,38 @@ Anschließend können wir
 ## Tipps und Tricks
 Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es macht. 
 - Sie können [CodeBlöcke mit Syntax-Highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) einsetzen
-- Wird es zu unübersichtlich? Sie können auch Unterordner mit Beispiel-Code anlegen und auf die entsprechenden Dateien verlinken. [Inspiration](https://github.com/gsoTH/flaskShowcase/tree/master/datenbanken).
+- Wird es zu unübersichtlich? Sie können auch Unterordner mit Beispiel-Code anlegen und auf die entsprechenden Dateien verlinken. [Inspiration](https://github.com/gsoTH/flaskShowcase/tree/master/datenbanken)
 - Die folgende Liste kann gerne ergänzt werden :)
 
 ### Bewegung animieren
 
+
 ### Objekte mit Tasten steuern
 
+Tastendruck = e.KeyCode
+Keys.(KeyOnKeyboard)
+
+if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D) 
+{
+    spieler.X = spieler.X + hoeheJeBereich;
+}
 ### Verhindern, dass ein Spieler aus dem Bild läuft
 
+2 neue int Variablen:
+
+- eine für x (int xCounter = 0;)
+- eine für y (int bahnCounter = 0;)
+
+z.B. nicht rechts aus dem Bild laufen:
+
+if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D) 
+{
+    if (xCounter < 4)
+    {
+        spieler.X = spieler.X + hoeheJeBereich;
+        xCounter++;
+    }
+}
 ### Spiel pausieren
 
 ### Ihr schönstes Ergebnis
