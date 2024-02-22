@@ -51,9 +51,24 @@ if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
 }
 ### Spiel pausieren
 
+tmrgametick.Stop(); für alle Objekte
 ### Ihr schönstes Ergebnis
 
+helle und dunkle Bahnen abwechselnd erstellen:
+
+for (int i = 0; i < helleBahnen.Length; i+=2)
+{
+    helleBahnen[i] = new Rectangle(0, i * hoeheJeBereich, breite, hoeheJeBereich);
+}
+
+for (int i = 1; i < dunkleBahnen.Length; i +=2)
+{
+    dunkleBahnen[i] = new Rectangle(0, i * hoeheJeBereich, breite, hoeheJeBereich);
+}
 
 
+
+SolidBrush brBahnHell = new SolidBrush(Color.LightGray);
+SolidBrush brBahnDunkel = new SolidBrush(Color.Gray);
 
 
