@@ -72,3 +72,11 @@ SolidBrush brBahnHell = new SolidBrush(Color.LightGray);
 SolidBrush brBahnDunkel = new SolidBrush(Color.Gray);
 
 
+
+
+### nützliche Funktionen
+
+Graphics g = e.Graphics;
+
+dvdLogo.X+=15;
+dvdLogo.Y+=15;
