@@ -24,7 +24,7 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
 
 
 ### Objekte mit Tasten steuern
-
+```
 Tastendruck = e.KeyCode
 Keys.(KeyOnKeyboard)
 
@@ -32,6 +32,7 @@ if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
 {
     spieler.X = spieler.X + hoeheJeBereich;
 }
+```
 ### Verhindern, dass ein Spieler aus dem Bild läuft
 
 2 neue int Variablen:
